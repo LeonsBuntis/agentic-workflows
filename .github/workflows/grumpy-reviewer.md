@@ -9,11 +9,12 @@ on:
 permissions:
   contents: read
   pull-requests: read
+  copilot-requests: write
 
 tools:
   cache-memory: true
   github:
-    lockdown: true
+    min-integrity: approved
     toolsets: [pull_requests, repos]
 
 safe-outputs:
