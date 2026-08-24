@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-24-dialog"
+              data-dialog-trigger
+            >
+              <span>24th of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,35 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-24-dialog"
+      aria-labelledby="august-24-question"
+      aria-describedby="august-24-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 24th of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-24-question">Who pays for the use of AI?</h2>
+        <p id="august-24-answer">
+          It depends on the engine: GitHub Copilot CLI (the default) is billed to the
+          organization via <strong>copilot-requests: write</strong> or the account
+          supplying <strong>COPILOT_GITHUB_TOKEN</strong>. Claude Code bills the
+          Anthropic account tied to <strong>ANTHROPIC_API_KEY</strong> (or Anthropic WIF).
+          OpenAI Codex bills the OpenAI account tied to <strong>CODEX_API_KEY</strong> or
+          <strong>OPENAI_API_KEY</strong>. Google Gemini bills the Google account tied to
+          <strong>GEMINI_API_KEY</strong> (or Google Cloud WIF). Pi bills the account for
+          the selected provider/model.
         </p>
       </article>
     </dialog>
